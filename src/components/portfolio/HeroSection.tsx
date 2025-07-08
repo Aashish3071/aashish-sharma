@@ -1,11 +1,39 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ArrowRight, Linkedin, Mail, Phone } from "lucide-react";
+import { ArrowRight, Linkedin, Mail, Phone, TrendingUp, Target, BarChart3, Zap, DollarSign, Users } from "lucide-react";
 
 export const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-hero overflow-hidden">
-      <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
+    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-secondary/20 to-primary/5 overflow-hidden">
+      {/* Marketing Icons Background */}
+      <div className="absolute inset-0 overflow-hidden">
+        {/* Floating Marketing Icons */}
+        <div className="absolute top-20 left-10 animate-float">
+          <TrendingUp className="h-8 w-8 text-primary/20" />
+        </div>
+        <div className="absolute top-32 right-20 animate-float" style={{ animationDelay: '1s' }}>
+          <Target className="h-6 w-6 text-accent/20" />
+        </div>
+        <div className="absolute top-40 left-1/4 animate-float" style={{ animationDelay: '2s' }}>
+          <BarChart3 className="h-10 w-10 text-chart-secondary/20" />
+        </div>
+        <div className="absolute bottom-40 right-10 animate-float" style={{ animationDelay: '0.5s' }}>
+          <Zap className="h-7 w-7 text-success/20" />
+        </div>
+        <div className="absolute bottom-32 left-16 animate-float" style={{ animationDelay: '1.5s' }}>
+          <DollarSign className="h-8 w-8 text-primary/20" />
+        </div>
+        <div className="absolute top-1/2 right-1/4 animate-float" style={{ animationDelay: '3s' }}>
+          <Users className="h-6 w-6 text-accent/20" />
+        </div>
+        
+        {/* Gradient Orbs */}
+        <div className="absolute top-1/4 left-1/3 w-64 h-64 bg-gradient-to-r from-primary/10 to-accent/10 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-1/4 right-1/3 w-80 h-80 bg-gradient-to-r from-accent/10 to-success/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
+        
+        {/* Grid Pattern */}
+        <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
+      </div>
       
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="max-w-4xl mx-auto space-y-8">
@@ -33,9 +61,14 @@ export const HeroSection = () => {
           </div>
 
           {/* Tagline */}
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto font-medium">
-            Performance-Driven Digital Marketer | 3+ Yrs | ROAS-focused Growth Expert
-          </p>
+          <div className="space-y-4">
+            <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto font-medium">
+              Proven Digital Marketing Strategist | Scaling Brands with Data-Driven ROAS
+            </p>
+            <p className="text-lg text-muted-foreground/80 max-w-2xl mx-auto">
+              Trusted by Fortune 500 companies and growing startups to deliver measurable growth through performance marketing
+            </p>
+          </div>
 
           {/* Key Stats */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-2xl mx-auto my-12">

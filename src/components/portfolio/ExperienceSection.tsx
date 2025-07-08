@@ -54,17 +54,6 @@ export const ExperienceSection = () => {
         { label: "Channels", value: "Multi", detail: "SEO, Email, Social" }
       ],
       color: "success"
-    },
-    {
-      company: "Sarvvid.ai",
-      clients: ["AI/Tech Startup"],
-      metrics: [
-        { label: "ORM", value: "↑ 20%", detail: "Online reputation" },
-        { label: "Website Traffic", value: "↑ 10%", detail: "Organic growth" },
-        { label: "Engagement", value: "↑ 15%", detail: "Social metrics" },
-        { label: "Sector", value: "AI/Tech", detail: "Emerging technology" }
-      ],
-      color: "chart-accent"
     }
   ];
 
