@@ -94,7 +94,7 @@ export const HeroSection = () => {
             </Button>
             <div className="flex gap-3">
               <Button variant="outline" size="lg" className="p-3" asChild>
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/aashish-sharma-6b3b17185/" target="_blank" rel="noopener noreferrer">
                   <Linkedin className="h-5 w-5" />
                 </a>
               </Button>
