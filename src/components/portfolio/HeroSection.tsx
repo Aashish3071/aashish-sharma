@@ -60,14 +60,20 @@ export const HeroSection = () => {
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
             <div className="flex gap-3">
-              <Button variant="outline" size="lg" className="p-3">
-                <Linkedin className="h-5 w-5" />
+              <Button variant="outline" size="lg" className="p-3" asChild>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <Linkedin className="h-5 w-5" />
+                </a>
               </Button>
-              <Button variant="outline" size="lg" className="p-3">
-                <Mail className="h-5 w-5" />
+              <Button variant="outline" size="lg" className="p-3" asChild>
+                <a href="mailto:aarav3071@gmail.com">
+                  <Mail className="h-5 w-5" />
+                </a>
               </Button>
-              <Button variant="outline" size="lg" className="p-3">
-                <Phone className="h-5 w-5" />
+              <Button variant="outline" size="lg" className="p-3" asChild>
+                <a href="tel:+919625064045">
+                  <Phone className="h-5 w-5" />
+                </a>
               </Button>
             </div>
           </div>

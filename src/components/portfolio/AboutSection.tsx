@@ -97,30 +97,6 @@ export const AboutSection = () => {
                   </div>
                 ))}
               </div>
-
-              {/* Certifications */}
-              <div className="mt-8">
-                <h4 className="text-lg font-semibold text-foreground mb-4">
-                  Certifications
-                </h4>
-                <Card className="shadow-card">
-                  <CardContent className="p-4">
-                    <div className="flex items-center gap-3">
-                      <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center">
-                        <Target className="h-6 w-6 text-white" />
-                      </div>
-                      <div>
-                        <div className="font-semibold text-foreground">
-                          Meta Certified Media Buying Professional
-                        </div>
-                        <div className="text-sm text-muted-foreground">
-                          Valid till October 2025
-                        </div>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              </div>
             </div>
           </div>
         </div>
