@@ -73,9 +73,7 @@ export const Footer = () => {
               <p className="text-white/60 text-sm">
                 © 2024 Aashish Sharma. All rights reserved.
               </p>
-              <p className="text-white/60 text-sm flex items-center gap-1">
-                Made with <Heart className="h-4 w-4 text-red-400" /> for growth-focused brands
-              </p>
+
             </div>
           </div>
         </div>
